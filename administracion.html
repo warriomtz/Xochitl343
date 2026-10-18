@@ -10,7 +10,7 @@
 <meta property="og:description" content="La administración y el Consejo de Xochitl 343.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#F5F6F5">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F5F6F5'/%3E%3Cpath d='M7 25V13h6v12M13 25V6h7v19M20 25V15h5v10' fill='none' stroke='%232B2D2F' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/jost-300.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:Jost;font-weight:300;font-style:normal;font-display:swap;src:url(fonts/jost-300.woff2) format("woff2")}
@@ -36,7 +36,8 @@ a{color:inherit}
 /* ---- menú superior (sticky) */
 .site{position:sticky;top:0;z-index:20;background:rgba(245,246,245,.93);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;gap:12px 28px;min-height:64px;flex-wrap:wrap;padding-block:8px}
-.mark{font:400 1.2rem/1 var(--sans);letter-spacing:.05em;text-decoration:none}
+.mark{display:inline-flex;align-items:center;gap:14px;font:400 1.2rem/1 var(--sans);letter-spacing:.05em;text-decoration:none}
+.mark img{display:block;height:40px;width:auto}
 .nav{display:flex;gap:6px 24px;margin:0 0 0 auto;padding:0;list-style:none;font:400 .95rem/1 var(--sans)}
 .nav a{display:inline-block;padding:10px 0;text-decoration:none;color:var(--stone);border-bottom:1px solid transparent}
 .nav a:hover{color:var(--ink)}
@@ -129,7 +130,7 @@ dialog#lb button{position:absolute;top:8px;right:8px;font:500 .9rem/1 var(--sans
 </style>
 </head>
 <body>
-<header class="site"><div class="wrap bar"><a class="mark" href="index.html">Xochitl 343</a><nav aria-label="Principal"><ul class="nav"><li><a href="index.html" data-i18n="n.home">Inicio</a></li><li><a href="condominio.html" data-i18n="n.condo">Condominio</a></li><li><a href="amenidades.html" data-i18n="n.amen">Amenidades</a></li><li><a href="avisos.html" data-i18n="n.avisos">Avisos</a></li><li><a href="documentos.html" data-i18n="n.docs">Documentos</a></li><li><a href="administracion.html" aria-current="page" data-i18n="n.admin">Administración</a></li></ul></nav><button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button></div></header>
+<header class="site"><div class="wrap bar"><a class="mark" href="index.html" aria-label="Xochitl 343, inicio"><img src="logo/xochitl343-logo-mark.svg" alt="" width="114" height="40"><span>Xochitl 343</span></a><nav aria-label="Principal"><ul class="nav"><li><a href="index.html" data-i18n="n.home">Inicio</a></li><li><a href="condominio.html" data-i18n="n.condo">Condominio</a></li><li><a href="amenidades.html" data-i18n="n.amen">Amenidades</a></li><li><a href="avisos.html" data-i18n="n.avisos">Avisos</a></li><li><a href="documentos.html" data-i18n="n.docs">Documentos</a></li><li><a href="administracion.html" aria-current="page" data-i18n="n.admin">Administración</a></li></ul></nav><button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button></div></header>
 <main id="main">
 <section class="page-head"><div class="wrap"><h1 data-i18n="pm.h">Administración y Consejo</h1><p class="lede" data-i18n="pm.l">Quién se encarga del condominio y cómo comunicarse con ellos.</p></div></section>
 <section class="sec"><div class="wrap split">
