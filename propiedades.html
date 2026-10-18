@@ -138,11 +138,11 @@ dialog#lb button{position:absolute;top:8px;right:8px;font:500 .9rem/1 var(--sans
 <section class="page-head"><div class="wrap"><h1 data-i18n="pp.h">Propiedades</h1><p class="lede" data-i18n="pp.l">Departamentos y locales de Xochitl 343 disponibles en renta o en venta.</p></div></section>
 <section class="sec"><div class="wrap split">
   <h2 data-i18n="pp.r">En renta</h2>
-  <div><div class="empty"><h3 data-i18n="pp.er.h">Por ahora no hay propiedades en renta</h3><p data-i18n="pp.er.p">Cuando haya una disponible, aparecerá aquí con fotos, metros cuadrados y precio.</p></div></div>
+  <ul class="index"><li><a href="renta.html"><span class="t" data-i18n="pp.cnt.renta.t">0 propiedades disponibles</span><span class="d" data-i18n="pp.cnt.renta.d">Ver propiedades en renta</span></a></li></ul>
 </div></section>
 <section class="sec"><div class="wrap split">
   <h2 data-i18n="pp.v">En venta</h2>
-  <div><div class="empty"><h3 data-i18n="pp.ev.h">Por ahora no hay propiedades en venta</h3><p data-i18n="pp.ev.p">Cuando haya una disponible, aparecerá aquí con fotos, metros cuadrados y precio.</p></div></div>
+  <ul class="index"><li><a href="venta.html"><span class="t" data-i18n="pp.cnt.venta.t">0 propiedades disponibles</span><span class="d" data-i18n="pp.cnt.venta.d">Ver propiedades en venta</span></a></li></ul>
 </div></section>
 <section class="sec"><div class="wrap split">
   <h2 data-i18n="pp.a">Amenidades</h2>
@@ -153,7 +153,7 @@ dialog#lb button{position:absolute;top:8px;right:8px;font:500 .9rem/1 var(--sans
 
 <script>
 (function(){
-  var D = {"am.pet.t": "Pet park", "am.pet.d": "A space for the condominium's pets.", "am.terraza.t": "Terrace with grills", "am.terraza.d": "A shared area to gather and cook outdoors.", "am.jardines.t": "Gardens and interior fountains", "am.jardines.d": "Green areas and fountains inside the complex.", "am.mural.t": "Mural", "am.mural.d": "A work of art for all residents to enjoy.", "am.gym.t": "Outdoor gym", "am.gym.d": "Exercise equipment in the open air.", "pp.l": "Xochitl 343 apartments and commercial units available for rent or sale.", "pp.h": "Properties", "pp.r": "For rent", "pp.er.h": "No properties for rent at the moment", "pp.er.p": "When one becomes available, it will appear here with photos, square meters and price.", "pp.v": "For sale", "pp.ev.h": "No properties for sale at the moment", "pp.ev.p": "When one becomes available, it will appear here with photos, square meters and price.", "pp.a": "Amenities", "__title": "Properties for rent and sale | Xochitl 343", "__desc": "Apartments and commercial units for rent or sale at Xochitl 343, Ciudad del Sol, Zapopan.", "n.home": "Home", "n.condo": "The condominium", "n.amen": "Amenities", "n.prop": "Properties", "n.avisos": "Notices", "n.docs": "Documents", "n.admin": "Management", "f.addr": "Av. Xochitl 343, Ciudad del Sol, Zapopan, Jalisco, Mexico"};
+  var D = {"am.pet.t": "Pet park", "am.pet.d": "A space for the condominium's pets.", "am.terraza.t": "Terrace with grills", "am.terraza.d": "A shared area to gather and cook outdoors.", "am.jardines.t": "Gardens and interior fountains", "am.jardines.d": "Green areas and fountains inside the complex.", "am.mural.t": "Mural", "am.mural.d": "A work of art for all residents to enjoy.", "am.gym.t": "Outdoor gym", "am.gym.d": "Exercise equipment in the open air.", "pp.l": "Xochitl 343 apartments and commercial units available for rent or sale.", "pp.h": "Properties", "pp.r": "For rent", "pp.cnt.renta.t": "0 properties available", "pp.cnt.renta.d": "View properties for rent", "pp.v": "For sale", "pp.cnt.venta.t": "0 properties available", "pp.cnt.venta.d": "View properties for sale", "pp.a": "Amenities", "__title": "Properties for rent and sale | Xochitl 343", "__desc": "Apartments and commercial units for rent or sale at Xochitl 343, Ciudad del Sol, Zapopan.", "n.home": "Home", "n.condo": "The condominium", "n.amen": "Amenities", "n.prop": "Properties", "n.avisos": "Notices", "n.docs": "Documents", "n.admin": "Management", "f.addr": "Av. Xochitl 343, Ciudad del Sol, Zapopan, Jalisco, Mexico"};
   var KEY = 'x343-lang';
   function read(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
   function save(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
