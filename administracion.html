@@ -11,24 +11,23 @@
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#F5F6F5">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="fonts/jost-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/gilda-display-400.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face{font-family:Jost;font-weight:300;font-style:normal;font-display:swap;src:url(fonts/jost-300.woff2) format("woff2")}
-@font-face{font-family:Jost;font-weight:400;font-style:normal;font-display:swap;src:url(fonts/jost-400.woff2) format("woff2")}
-@font-face{font-family:Jost;font-weight:500;font-style:normal;font-display:swap;src:url(fonts/jost-500.woff2) format("woff2")}
-@font-face{font-family:Newsreader;font-weight:400;font-style:normal;font-display:swap;src:url(fonts/newsreader-400.woff2) format("woff2")}
-@font-face{font-family:Newsreader;font-weight:400;font-style:italic;font-display:swap;src:url(fonts/newsreader-400i.woff2) format("woff2")}
+@font-face{font-family:"Gilda Display";font-weight:400;font-style:normal;font-display:swap;src:url(fonts/gilda-display-400.woff2) format("woff2")}
+@font-face{font-family:Manrope;font-weight:400;font-style:normal;font-display:swap;src:url(fonts/manrope-400.woff2) format("woff2")}
+@font-face{font-family:Manrope;font-weight:500;font-style:normal;font-display:swap;src:url(fonts/manrope-500.woff2) format("woff2")}
 
 :root{
   --paper:#F5F6F5; --ink:#2B2D2F; --stone:#626769; --line:#D3D7D5;
   --moss:#3E5F55; --panel:#E7EAE8;
-  --sans:Jost,"Helvetica Neue",Arial,sans-serif;
-  --serif:Newsreader,Georgia,"Times New Roman",serif;
+  --sans:Manrope,"Helvetica Neue",Arial,sans-serif;
+  --display:"Gilda Display",Georgia,"Times New Roman",serif;
+  --serif:Manrope,"Helvetica Neue",Arial,sans-serif;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 1.125rem/1.65 var(--serif)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.7 var(--serif)}
 a{color:inherit}
 .wrap{width:min(1120px,100% - 2*clamp(20px,5vw,48px));margin-inline:auto}
 :focus-visible{outline:3px solid var(--moss);outline-offset:3px}
@@ -52,12 +51,12 @@ a{color:inherit}
 }
 
 /* ---- tipografía */
-h1,h2,h3{font-family:var(--sans);font-weight:300;margin:0;color:var(--ink)}
-h1{font-size:clamp(3.4rem,10.5vw,8rem);line-height:.95;letter-spacing:-.025em}
-h2{font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.1;letter-spacing:-.01em}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;color:var(--ink)}
+h1{font-size:clamp(3rem,9.4vw,7.2rem);line-height:1;letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,3.3vw,2.5rem);line-height:1.12;letter-spacing:-.005em}
 h3{font-size:1.45rem;line-height:1.2}
 p{margin:0 0 1em;max-width:62ch}
-.lede{font-size:clamp(1.2rem,2.2vw,1.45rem);line-height:1.5;max-width:40ch;color:var(--ink)}
+.lede{font-size:clamp(1.1rem,2vw,1.3rem);line-height:1.55;max-width:42ch;color:var(--ink)}
 .muted{color:var(--stone)}
 
 /* ---- botones y enlaces */
@@ -86,7 +85,7 @@ p{margin:0 0 1em;max-width:62ch}
 .split{display:grid;gap:28px 56px}
 @media (min-width:900px){.split{grid-template-columns:4fr 8fr}}
 .page-head{padding-top:clamp(48px,8vw,96px);padding-bottom:clamp(36px,6vw,64px)}
-.page-head h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1}
+.page-head h1{font-size:clamp(2.5rem,6.6vw,4.7rem);line-height:1.05}
 .page-head .lede{margin-top:24px}
 
 /* ---- ficha técnica */
@@ -94,8 +93,8 @@ p{margin:0 0 1em;max-width:62ch}
 .spec div{display:grid;grid-template-columns:minmax(130px,1fr) 2fr;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
 .spec div:last-child{border-bottom:1px solid var(--line)}
 .spec dt{font:400 .98rem/1.4 var(--sans);color:var(--stone);padding-top:.3em}
-.spec dd{margin:0;font:300 1.5rem/1.35 var(--sans)}
-.spec dd small{display:block;font:400 1rem/1.5 var(--serif);color:var(--stone)}
+.spec dd{margin:0;font:400 1.5rem/1.35 var(--display)}
+.spec dd small{display:block;font:400 .95rem/1.55 var(--serif);color:var(--stone)}
 
 /* ---- listas de enlaces (amenidades, vecinos) */
 .index{list-style:none;margin:0;padding:0}
@@ -103,7 +102,7 @@ p{margin:0 0 1em;max-width:62ch}
 .index li:last-child{border-bottom:1px solid var(--line)}
 .index a{display:grid;gap:4px 24px;padding:20px 0;text-decoration:none}
 @media (min-width:700px){.index a{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);align-items:baseline}}
-.index .t{font:300 clamp(1.5rem,3vw,2.1rem)/1.15 var(--sans)}
+.index .t{font:400 clamp(1.5rem,3vw,2.1rem)/1.15 var(--display)}
 .index .d{color:var(--stone);font-size:1rem;line-height:1.5}
 .index a:hover .t{color:var(--moss)}
 
