@@ -64,6 +64,15 @@ p{margin:0 0 1em;max-width:62ch}
 .cta:hover{background:var(--moss)}
 .link{font:400 1rem/1.2 var(--sans);color:var(--moss);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
 .link:hover{text-decoration-thickness:2px}
+.cta{border:1px solid var(--ink)}
+.cta.alt{background:transparent;color:var(--ink)}
+.cta.alt:hover{background:var(--ink);color:var(--paper)}
+body.land{min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
+body.land main{flex:1;display:flex;align-items:center}
+.land-bar .bar{display:flex;justify-content:flex-end;padding-block:14px}
+.enter{width:100%;padding-bottom:clamp(40px,8vh,88px)}
+.enter .actions{margin-top:clamp(28px,5vh,48px);gap:16px}
+.enter .cta{min-width:min(100%,260px);text-align:center}
 .actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 32px;margin-top:36px}
 
 /* ---- portada */
@@ -124,7 +133,7 @@ dialog#lb button{position:absolute;top:8px;right:8px;font:500 .9rem/1 var(--sans
 </style>
 </head>
 <body>
-<header class="site"><div class="wrap bar"><a class="mark" href="index.html" aria-label="Xochitl 343, inicio"><img src="logo/xochitl343-logo-mark.svg" alt="" width="114" height="40"></a><nav aria-label="Principal"><ul class="nav"><li><a href="index.html" data-i18n="n.home">Inicio</a></li><li><a href="condominio.html" data-i18n="n.condo">Condominio</a></li><li><a href="amenidades.html" aria-current="page" data-i18n="n.amen">Amenidades</a></li><li><a href="avisos.html" data-i18n="n.avisos">Avisos</a></li><li><a href="documentos.html" data-i18n="n.docs">Documentos</a></li><li><a href="administracion.html" data-i18n="n.admin">Administración</a></li></ul></nav><button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button></div></header>
+<header class="site"><div class="wrap bar"><a class="mark" href="index.html" aria-label="Xochitl 343, inicio"><img src="logo/xochitl343-logo-mark.svg" alt="" width="114" height="40"></a><nav aria-label="Principal"><ul class="nav"><li><a href="index.html" data-i18n="n.home">Inicio</a></li><li><a href="condominio.html" data-i18n="n.condo">Condominio</a></li><li><a href="amenidades.html" aria-current="page" data-i18n="n.amen">Amenidades</a></li><li><a href="propiedades.html" data-i18n="n.prop">Propiedades</a></li><li><a href="avisos.html" data-i18n="n.avisos">Avisos</a></li><li><a href="documentos.html" data-i18n="n.docs">Documentos</a></li><li><a href="administracion.html" data-i18n="n.admin">Administración</a></li></ul></nav><button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button></div></header>
 <main id="main">
 <section class="page-head"><div class="wrap"><h1 data-i18n="pa.h">Amenidades</h1><p class="lede" data-i18n="pa.l">Espacios comunes para descansar, convivir y hacer ejercicio sin salir del condominio.</p></div></section>
 <section class="amenity" id="pet"><div class="wrap split">
@@ -152,7 +161,7 @@ dialog#lb button{position:absolute;top:8px;right:8px;font:500 .9rem/1 var(--sans
 <dialog id="lb" aria-label="Foto ampliada"><img alt=""><button type="button" aria-label="Cerrar">Cerrar</button></dialog>
 <script>
 (function(){
-  var D = {"pa.l": "Shared spaces to relax, gather and exercise without leaving the condominium.", "pa.h": "Amenities", "pa.ph1.pet": "Photo coming soon", "pa.ph2.pet": "Photo coming soon", "pa.pet.t": "Pet park", "pa.pet.d": "A space for the condominium's pets.", "pa.ph1.terraza": "Photo coming soon", "pa.ph2.terraza": "Photo coming soon", "pa.terraza.t": "Terrace with grills", "pa.terraza.d": "A shared area to gather and cook outdoors.", "pa.ph1.jardines": "Photo coming soon", "pa.ph2.jardines": "Photo coming soon", "pa.jardines.t": "Gardens and interior fountains", "pa.jardines.d": "Green areas and fountains inside the complex.", "pa.ph1.mural": "Photo coming soon", "pa.ph2.mural": "Photo coming soon", "pa.mural.t": "Mural", "pa.mural.d": "A work of art for all residents to enjoy.", "pa.ph1.gym": "Photo coming soon", "pa.ph2.gym": "Photo coming soon", "pa.gym.t": "Outdoor gym", "pa.gym.d": "Exercise equipment in the open air.", "__title": "Amenities | Xochitl 343", "__desc": "Pet park, terrace with grills, gardens and interior fountains, mural and outdoor gym at Xochitl 343.", "n.home": "Home", "n.condo": "The condominium", "n.amen": "Amenities", "n.avisos": "Notices", "n.docs": "Documents", "n.admin": "Management", "f.addr": "Av. Xochitl 343, Ciudad del Sol, Zapopan, Jalisco, Mexico"};
+  var D = {"pa.l": "Shared spaces to relax, gather and exercise without leaving the condominium.", "pa.h": "Amenities", "pa.ph1.pet": "Photo coming soon", "pa.ph2.pet": "Photo coming soon", "pa.pet.t": "Pet park", "pa.pet.d": "A space for the condominium's pets.", "pa.ph1.terraza": "Photo coming soon", "pa.ph2.terraza": "Photo coming soon", "pa.terraza.t": "Terrace with grills", "pa.terraza.d": "A shared area to gather and cook outdoors.", "pa.ph1.jardines": "Photo coming soon", "pa.ph2.jardines": "Photo coming soon", "pa.jardines.t": "Gardens and interior fountains", "pa.jardines.d": "Green areas and fountains inside the complex.", "pa.ph1.mural": "Photo coming soon", "pa.ph2.mural": "Photo coming soon", "pa.mural.t": "Mural", "pa.mural.d": "A work of art for all residents to enjoy.", "pa.ph1.gym": "Photo coming soon", "pa.ph2.gym": "Photo coming soon", "pa.gym.t": "Outdoor gym", "pa.gym.d": "Exercise equipment in the open air.", "__title": "Amenities | Xochitl 343", "__desc": "Pet park, terrace with grills, gardens and interior fountains, mural and outdoor gym at Xochitl 343.", "n.home": "Home", "n.condo": "The condominium", "n.amen": "Amenities", "n.prop": "Properties", "n.avisos": "Notices", "n.docs": "Documents", "n.admin": "Management", "f.addr": "Av. Xochitl 343, Ciudad del Sol, Zapopan, Jalisco, Mexico"};
   var KEY = 'x343-lang';
   function read(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
   function save(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
