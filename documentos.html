@@ -68,20 +68,15 @@ p{margin:0 0 1em;max-width:62ch}
 
 /* ---- portada */
 .hero{padding-top:clamp(48px,9vw,112px)}
-.elev{display:block;width:100%;height:auto;margin-top:clamp(40px,6vw,72px);color:var(--ink)}
-.elev .ground{stroke:var(--moss);stroke-width:2}
-.elev .floors{opacity:.32}
+.elev{display:block;width:100%;height:auto;margin-top:clamp(4px,1vw,12px)}
 @media (prefers-reduced-motion:no-preference){
-  .elev .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.9s cubic-bezier(.6,.05,.2,1) forwards}
-  .elev .d1{animation-delay:.35s}.elev .d2{animation-delay:.65s}.elev .d3{animation-delay:.95s}
-  .elev .floors{opacity:0;animation:fade 1.1s ease 1.9s forwards}
+  .elev .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s cubic-bezier(.6,.05,.2,1) .2s forwards}
   @keyframes draw{to{stroke-dashoffset:0}}
-  @keyframes fade{to{opacity:.32}}
 }
 
 /* ---- secciones */
 .sec{padding-block:clamp(56px,9vw,104px);border-top:1px solid var(--line)}
-.hero + .sec{margin-top:clamp(40px,6vw,72px)}
+.hero{padding-bottom:clamp(48px,8vw,96px)}
 .split{display:grid;gap:28px 56px}
 @media (min-width:900px){.split{grid-template-columns:4fr 8fr}}
 .page-head{padding-top:clamp(48px,8vw,96px);padding-bottom:clamp(36px,6vw,64px)}
@@ -129,7 +124,7 @@ dialog#lb button{position:absolute;top:8px;right:8px;font:500 .9rem/1 var(--sans
 </style>
 </head>
 <body>
-<header class="site"><div class="wrap bar"><a class="mark" href="index.html" aria-label="Xochitl 343, inicio"><img src="logo/xochitl343-logo-mark.svg" alt="" width="114" height="40"><span>Xochitl 343</span></a><nav aria-label="Principal"><ul class="nav"><li><a href="index.html" data-i18n="n.home">Inicio</a></li><li><a href="condominio.html" data-i18n="n.condo">Condominio</a></li><li><a href="amenidades.html" data-i18n="n.amen">Amenidades</a></li><li><a href="avisos.html" data-i18n="n.avisos">Avisos</a></li><li><a href="documentos.html" aria-current="page" data-i18n="n.docs">Documentos</a></li><li><a href="administracion.html" data-i18n="n.admin">Administración</a></li></ul></nav><button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button></div></header>
+<header class="site"><div class="wrap bar"><a class="mark" href="index.html" aria-label="Xochitl 343, inicio"><img src="logo/xochitl343-logo-mark.svg" alt="" width="114" height="40"></a><nav aria-label="Principal"><ul class="nav"><li><a href="index.html" data-i18n="n.home">Inicio</a></li><li><a href="condominio.html" data-i18n="n.condo">Condominio</a></li><li><a href="amenidades.html" data-i18n="n.amen">Amenidades</a></li><li><a href="avisos.html" data-i18n="n.avisos">Avisos</a></li><li><a href="documentos.html" aria-current="page" data-i18n="n.docs">Documentos</a></li><li><a href="administracion.html" data-i18n="n.admin">Administración</a></li></ul></nav><button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button></div></header>
 <main id="main">
 <section class="page-head"><div class="wrap"><h1 data-i18n="pd.h">Documentos</h1><p class="lede" data-i18n="pd.l">Documentos de consulta general del condominio.</p></div></section><section class="wrap" style="padding-bottom:clamp(56px,9vw,104px)"><div class="empty"><h3 data-i18n="pd.e.h">Todavía no hay documentos públicos</h3><p data-i18n="pd.e.p">Aquí se publicarán los documentos de consulta general. Los que incluyen datos de los vecinos, como estados de cuenta o adeudos, no se publican en este sitio.</p></div></section>
 </main>

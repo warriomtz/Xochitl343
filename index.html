@@ -68,20 +68,15 @@ p{margin:0 0 1em;max-width:62ch}
 
 /* ---- portada */
 .hero{padding-top:clamp(48px,9vw,112px)}
-.elev{display:block;width:100%;height:auto;margin-top:clamp(40px,6vw,72px);color:var(--ink)}
-.elev .ground{stroke:var(--moss);stroke-width:2}
-.elev .floors{opacity:.32}
+.elev{display:block;width:100%;height:auto;margin-top:clamp(4px,1vw,12px)}
 @media (prefers-reduced-motion:no-preference){
-  .elev .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.9s cubic-bezier(.6,.05,.2,1) forwards}
-  .elev .d1{animation-delay:.35s}.elev .d2{animation-delay:.65s}.elev .d3{animation-delay:.95s}
-  .elev .floors{opacity:0;animation:fade 1.1s ease 1.9s forwards}
+  .elev .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s cubic-bezier(.6,.05,.2,1) .2s forwards}
   @keyframes draw{to{stroke-dashoffset:0}}
-  @keyframes fade{to{opacity:.32}}
 }
 
 /* ---- secciones */
 .sec{padding-block:clamp(56px,9vw,104px);border-top:1px solid var(--line)}
-.hero + .sec{margin-top:clamp(40px,6vw,72px)}
+.hero{padding-bottom:clamp(48px,8vw,96px)}
 .split{display:grid;gap:28px 56px}
 @media (min-width:900px){.split{grid-template-columns:4fr 8fr}}
 .page-head{padding-top:clamp(48px,8vw,96px);padding-bottom:clamp(36px,6vw,64px)}
@@ -129,17 +124,16 @@ dialog#lb button{position:absolute;top:8px;right:8px;font:500 .9rem/1 var(--sans
 </style>
 </head>
 <body>
-<header class="site"><div class="wrap bar"><a class="mark" href="index.html" aria-label="Xochitl 343, inicio"><img src="logo/xochitl343-logo-mark.svg" alt="" width="114" height="40"><span>Xochitl 343</span></a><nav aria-label="Principal"><ul class="nav"><li><a href="index.html" aria-current="page" data-i18n="n.home">Inicio</a></li><li><a href="condominio.html" data-i18n="n.condo">Condominio</a></li><li><a href="amenidades.html" data-i18n="n.amen">Amenidades</a></li><li><a href="avisos.html" data-i18n="n.avisos">Avisos</a></li><li><a href="documentos.html" data-i18n="n.docs">Documentos</a></li><li><a href="administracion.html" data-i18n="n.admin">Administración</a></li></ul></nav><button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button></div></header>
+<header class="site"><div class="wrap bar"><a class="mark" href="index.html" aria-label="Xochitl 343, inicio"><img src="logo/xochitl343-logo-mark.svg" alt="" width="114" height="40"></a><nav aria-label="Principal"><ul class="nav"><li><a href="index.html" aria-current="page" data-i18n="n.home">Inicio</a></li><li><a href="condominio.html" data-i18n="n.condo">Condominio</a></li><li><a href="amenidades.html" data-i18n="n.amen">Amenidades</a></li><li><a href="avisos.html" data-i18n="n.avisos">Avisos</a></li><li><a href="documentos.html" data-i18n="n.docs">Documentos</a></li><li><a href="administracion.html" data-i18n="n.admin">Administración</a></li></ul></nav><button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button></div></header>
 <main id="main">
 
 <section class="hero"><div class="wrap">
   <h1>Xochitl 343</h1>
-  <p class="lede" data-i18n="h.lede" style="margin-top:28px">Condominio residencial en Ciudad del Sol, Zapopan: tres torres, 33 departamentos y 4 locales comerciales.</p>
-  <div class="actions">
+  <svg class="elev" viewBox="40 0 2258 490" role="img" aria-label="Logotipo de Xochitl 343" data-i18n-aria="a.elev"><path class="draw" pathLength="1" d="M40 431 L184.5 431 L184.5 154 L306 97 L579 177.4 L579 431 L517 431 L517 90 L629 50 L756 108.6 L756 431 L668.3 431 L668.3 237.5 L925 190 L1025 237.5 L1025 431 L2298 431" fill="none" stroke="#434343" stroke-width="9" stroke-linejoin="miter" stroke-miterlimit="10" stroke-linecap="butt"/></svg>
+  <div class="actions" style="margin-top:clamp(20px,3vw,32px)">
     <a class="cta" data-i18n="h.cta" href="amenidades.html">Ver amenidades</a>
     <a class="link" data-i18n="h.cta2" href="#vecinos">Información para vecinos</a>
   </div>
-  <svg class="elev" viewBox="0 0 960 330" role="img" aria-label="Alzado esquemático de tres torres" data-i18n-aria="a.elev"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="miter"><path class="draw ground" pathLength="1" d="M40 300H920"/><path class="draw d1" pathLength="1" d="M150 300V120H320V300"/><path class="draw d2" pathLength="1" d="M380 300V40H580V300"/><path class="draw d3" pathLength="1" d="M650 300V170H800V300"/></g><path class="floors" fill="none" stroke="currentColor" stroke-width=".75" d="M150 140H320M150 160H320M150 180H320M150 200H320M150 220H320M150 240H320M150 260H320M150 280H320M207 120V300M263 120V300M380 60H580M380 80H580M380 100H580M380 120H580M380 140H580M380 160H580M380 180H580M380 200H580M380 220H580M380 240H580M380 260H580M380 280H580M447 40V300M513 40V300M650 190H800M650 210H800M650 230H800M650 250H800M650 270H800M650 290H800M700 170V300M750 170V300"/></svg>
 </div></section>
 <section class="sec"><div class="wrap split">
   <h2 data-i18n="c.h">El condominio</h2>
@@ -168,7 +162,7 @@ dialog#lb button{position:absolute;top:8px;right:8px;font:500 .9rem/1 var(--sans
 
 <script>
 (function(){
-  var D = {"h.lede": "A residential condominium in Ciudad del Sol, Zapopan: three towers, 33 apartments and 4 commercial units.", "h.cta": "See the amenities", "h.cta2": "Information for residents", "a.elev": "Schematic elevation of three towers", "s.loc": "Location", "s.locv": "Ciudad del Sol, Zapopan", "s.tow": "Towers", "s.apt": "Apartments", "s.shop": "Commercial units", "c.h": "The condominium", "c.p": "Xochitl 343 is on Avenida Xochitl, in the Ciudad del Sol neighborhood of Zapopan, Jalisco. Every apartment has an assigned storage room and one or more parking spaces, depending on the unit's square meters.", "c.more": "Explore the condominium", "am.pet.t": "Pet park", "am.pet.d": "A space for the condominium's pets.", "am.terraza.t": "Terrace with grills", "am.terraza.d": "A shared area to gather and cook outdoors.", "am.jardines.t": "Gardens and interior fountains", "am.jardines.d": "Green areas and fountains inside the complex.", "am.mural.t": "Mural", "am.mural.d": "A work of art for all residents to enjoy.", "am.gym.t": "Outdoor gym", "am.gym.d": "Exercise equipment in the open air.", "a.h": "Amenities", "r.avisos.t": "Notices", "r.avisos.d": "Announcements from management and the Council.", "r.docs.t": "Documents", "r.docs.d": "Bylaws, meeting minutes and common forms.", "r.admin.t": "Management and Council", "r.admin.d": "Who manages the condominium and how to reach them.", "v.h": "For residents", "__title": "Xochitl 343 | Condominium in Ciudad del Sol, Zapopan", "__desc": "Xochitl 343: a residential condominium with three towers, 33 apartments and 4 commercial units in Ciudad del Sol, Zapopan.", "n.home": "Home", "n.condo": "The condominium", "n.amen": "Amenities", "n.avisos": "Notices", "n.docs": "Documents", "n.admin": "Management", "f.addr": "Av. Xochitl 343, Ciudad del Sol, Zapopan, Jalisco, Mexico"};
+  var D = {"a.elev": "Xochitl 343 logo", "h.cta": "See the amenities", "h.cta2": "Information for residents", "s.loc": "Location", "s.locv": "Ciudad del Sol, Zapopan", "s.tow": "Towers", "s.apt": "Apartments", "s.shop": "Commercial units", "c.h": "The condominium", "c.p": "Xochitl 343 is on Avenida Xochitl, in the Ciudad del Sol neighborhood of Zapopan, Jalisco. Every apartment has an assigned storage room and one or more parking spaces, depending on the unit's square meters.", "c.more": "Explore the condominium", "am.pet.t": "Pet park", "am.pet.d": "A space for the condominium's pets.", "am.terraza.t": "Terrace with grills", "am.terraza.d": "A shared area to gather and cook outdoors.", "am.jardines.t": "Gardens and interior fountains", "am.jardines.d": "Green areas and fountains inside the complex.", "am.mural.t": "Mural", "am.mural.d": "A work of art for all residents to enjoy.", "am.gym.t": "Outdoor gym", "am.gym.d": "Exercise equipment in the open air.", "a.h": "Amenities", "r.avisos.t": "Notices", "r.avisos.d": "Announcements from management and the Council.", "r.docs.t": "Documents", "r.docs.d": "Bylaws, meeting minutes and common forms.", "r.admin.t": "Management and Council", "r.admin.d": "Who manages the condominium and how to reach them.", "v.h": "For residents", "__title": "Xochitl 343 | Condominium in Ciudad del Sol, Zapopan", "__desc": "Xochitl 343: a residential condominium with three towers, 33 apartments and 4 commercial units in Ciudad del Sol, Zapopan.", "n.home": "Home", "n.condo": "The condominium", "n.amen": "Amenities", "n.avisos": "Notices", "n.docs": "Documents", "n.admin": "Management", "f.addr": "Av. Xochitl 343, Ciudad del Sol, Zapopan, Jalisco, Mexico"};
   var KEY = 'x343-lang';
   function read(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
   function save(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
